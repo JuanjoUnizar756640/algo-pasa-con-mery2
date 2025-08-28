@@ -43,7 +43,19 @@ export default function Menu() {
     <section id="carta" className="py-24 bg-[#0f1621]">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <h2 className="section-title">Carta</h2>
-        <p className="mt-2 opacity-80">Nuestra selección actualizada.</p>
+        <p className="mt-2 opacity-80">
+          Si lo prefieres, puedes{" "}
+          <a
+            href="/carta_mery.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-brand"
+            aria-label="Abrir la carta en PDF en una nueva pestaña"
+          >
+            descargar la carta en PDF
+          </a>
+          .
+        </p>
 
         <div className="mt-8 flex flex-wrap gap-2">
           {tabs.map((t) => (
