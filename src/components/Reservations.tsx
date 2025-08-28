@@ -11,12 +11,10 @@ export default function Reservations() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Replace with your preferred reservation flow:
-    // option A) WhatsApp deep link, B) mailto, C) custom backend endpoint
     const msg = encodeURIComponent(
       `Hola, soy ${name}. Me gustaría reservar para ${people} personas el ${date} a las ${time}. Teléfono: ${phone}. Notas: ${notes}`
     )
-    const wa = `https://wa.me/34600000000?text=${msg}` // TODO: colocar teléfono real
+    const wa = `https://wa.me/34622357160?text=${msg}`
     window.open(wa, '_blank')
   }
 
@@ -25,7 +23,7 @@ export default function Reservations() {
       <div className="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 items-start">
         <div>
           <h2 className="section-title">Reservas</h2>
-          <p className="mt-2 opacity-80">De domingo a jueves: 19:00–01:00 · Viernes y sábado: 19:00–02:00</p>
+          <p className="mt-2 opacity-80">De lunes a domingo: 13:00 a 16:00 horario de comidas y 20:00 a 22:30 horario de cenas. Miércoles cerrado.</p>
           <div className="card mt-6">
             <form onSubmit={submit} className="grid gap-4">
               <div className="grid grid-cols-2 gap-3">
@@ -59,7 +57,7 @@ export default function Reservations() {
                 </div>
               </div>
               <button type="submit" className="button-primary justify-center">Solicitar por WhatsApp</button>
-              <p className="text-xs opacity-70">* Recibirás confirmación por WhatsApp. Si lo prefieres, escríbenos a <a className="underline" href="mailto:reservas@algopasaconmery.com">reservas@algopasaconmery.com</a>.</p>
+              <p className="text-xs opacity-70">* Recibirás confirmación por WhatsApp. Si lo prefieres, escríbenos a <a className="underline" href="mailto:reservas@algopasaconmery.com">algopasaconmery13@gmail.com</a>.</p>
             </form>
           </div>
         </div>
@@ -71,8 +69,8 @@ export default function Reservations() {
           transition={{ duration: .8 }}
           className="relative rounded-3xl overflow-hidden border border-white/10 shadow-soft">
           <img
-            src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1920&auto=format&fit=crop"
-            alt="Copas y barra iluminada"
+            src="/mery_reservas.jpg"
+            alt="Reservas Algo pasa con Mery"
             className="w-full h-full object-cover max-h-[560px]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
