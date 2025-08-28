@@ -12,14 +12,15 @@ export default function Concept() {
           className="card">
           <h2 className="section-title">El concepto</h2>
           <p className="mt-4 opacity-90">
-            Inspirados por la naturaleza y la magia de las noches de Zaragoza, hemos creado
-            un refugio urbano: luces cálidas entre hojas, madera, cascadas sonoras y
-            una barra donde ocurre la alquimia.
+            En Algo pasa con Mery creemos que la mesa es un lugar de encuentro. Somos un restaurante familiar donde tradición y vanguardia se abrazan para crear momentos únicos.
           </p>
           <p className="mt-2 opacity-90">
-            Nuestra carta viaja por sabores del mundo con productos locales.
-            Bienvenido a un relato que se bebe y se comparte.
+            Nuestras experiencias combinan cocina de alta gama con propuestas innovadoras, pensadas para sorprender sin perder la calidez de lo cercano. Cada plato está elaborado con productos seleccionados y el cuidado de un equipo que disfruta compartiendo su pasión.
           </p>
+          <p className="mt-2 opacity-90">
+            Más que una comida, te invitamos a vivir un recuerdo en el que el sabor, el ambiente y el servicio se unen para que siempre quieras volver.
+          </p>
+
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: .98 }}
@@ -28,8 +29,8 @@ export default function Concept() {
           transition={{ duration: .8 }}
           className="relative rounded-3xl overflow-hidden shadow-soft border border-white/10">
           <img
-            src="https://images.unsplash.com/photo-1495968283545-523aef2313f0?q=80&w=1920&auto=format&fit=crop"
-            alt="Bar con vegetación y luces cálidas"
+            src="/pulpo_mery_concepto.jpeg"
+            alt="Pulpo Mery concepto"
             className="w-full h-full object-cover max-h-[480px]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
