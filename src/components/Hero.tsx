@@ -25,7 +25,7 @@ export default function Hero() {
           transition={{ delay: .2, duration: .8 }}
           className="max-w-2xl mt-6 text-lg opacity-90"
         >
-          Un bar de autor donde el bosque encantado se mezcla con cócteles creativos y tapas que cuentan historias.
+          Un restaurante familiar donde la innovación se une a la alta cocina y al trato cercano.
         </motion.p>
         <div className="mt-10 flex flex-wrap gap-3">
           <a href="#reservas" className="button-primary">Reservar mesa</a>
