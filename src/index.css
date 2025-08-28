@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+/* Decorative starry overlay reminiscent of a magical forest sky */
+.bg-stars {
+  position: relative;
+}
+.bg-stars::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(1px 1px at 20% 30%, #ffffff66 50%, transparent 51%),
+              radial-gradient(1px 1px at 60% 70%, #ffffff55 50%, transparent 51%),
+              radial-gradient(1px 1px at 80% 20%, #ffffff44 50%, transparent 51%),
+              radial-gradient(1px 1px at 30% 80%, #ffffff55 50%, transparent 51%);
+  background-size: 3px 3px;
+  pointer-events: none;
+  opacity: .6;
+}
+.gradient-forest {
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(32, 141, 104,.25), transparent 60%),
+              radial-gradient(600px 600px at 10% 120%, rgba(51, 120, 202,.22), transparent 60%),
+              linear-gradient(180deg, #0b0f14 0%, #0b0f14 60%, #0f1621 100%);
+}
+.card {
+  @apply bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md shadow-soft;
+}
+.card-title {
+  @apply text-xl font-semibold tracking-wide;
+}
+.section-title {
+  @apply font-serif text-3xl md:text-4xl tracking-wide;
+}
+.button {
+  @apply inline-flex items-center gap-2 px-5 py-3 rounded-2xl font-semibold;
+}
+.button-primary {
+  @apply button bg-brand text-black hover:bg-brand-400 transition;
+}
+.button-outline {
+  @apply button border border-white/20 hover:bg-white/10 transition;
+}
+.nav-link {
+  @apply text-sm md:text-base opacity-80 hover:opacity-100 transition;
+}
+/* Smooth anchor scrolling */
+html {
+  scroll-behavior: smooth;
+}
