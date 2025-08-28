@@ -23,7 +23,7 @@ export default function Reservations() {
       <div className="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 items-start">
         <div>
           <h2 className="section-title">Reservas</h2>
-          <p className="mt-2 opacity-80">De lunes a domingo: 13:00 a 16:00 horario de comidas y 20:00 a 22:30 horario de cenas. Miércoles cerrado.</p>
+          <p className="mt-2 opacity-80">De lunes a domingo: 13:00 a 16:00 horario de comidas y 20:00 a 22:30 horario de cenas. Miércoles cerrado por descanso semanal.</p>
           <div className="card mt-6">
             <form onSubmit={submit} className="grid gap-4">
               <div className="grid grid-cols-2 gap-3">
@@ -69,7 +69,7 @@ export default function Reservations() {
           transition={{ duration: .8 }}
           className="relative rounded-3xl overflow-hidden border border-white/10 shadow-soft">
           <img
-            src="/mery_reservas.jpg"
+            src="/mery_reservas_2.jpg"
             alt="Reservas Algo pasa con Mery"
             className="w-full h-full object-cover max-h-[560px]"
           />

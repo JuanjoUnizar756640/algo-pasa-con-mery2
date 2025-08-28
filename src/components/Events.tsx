@@ -3,7 +3,7 @@ export default function Events() {
     <section id="eventos" className="py-24 bg-[#0b0f14]">
       <div className="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 items-center">
         <div className="card">
-          <h2 className="section-title">Eventos & grupos</h2>
+          <h2 className="section-title">Eventos y grupos</h2>
           <p className="mt-2 opacity-80">
             Cumpleaños, afterworks, despedidas o celebraciones íntimas.
             Diseñamos menús de grupo y barras libres de cócteles a medida.
@@ -17,9 +17,9 @@ export default function Events() {
         </div>
         <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-soft">
           <img
-            src="https://images.unsplash.com/photo-1521334726092-b509a19597d0?q=80&w=1920&auto=format&fit=crop"
+            src="/mery_reservas.jpg"
             alt="Brindis en evento privado"
-            className="w-full h-full object-cover max-h-[420px]"
+            className="w-full h-full object-cover max-h-[560px]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
         </div>
