@@ -14,7 +14,7 @@ export default function Reservations() {
     const msg = encodeURIComponent(
       `Hola, soy ${name}. Me gustaría reservar para ${people} personas el ${date} a las ${time}. Teléfono: ${phone}. Notas: ${notes}`
     )
-    const wa = `https://wa.me/34622357160?text=${msg}`
+    const wa = `https://wa.me/34613372406?text=${msg}`
     window.open(wa, '_blank')
   }
 
