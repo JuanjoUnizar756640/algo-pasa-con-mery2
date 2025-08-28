@@ -14,7 +14,7 @@ export default function Location() {
             <div className="card">
               <div className="font-semibold">Contacto</div>
               <div className="mt-2 text-sm opacity-80">+34 613 372 406</div>
-              <div className="text-sm opacity-80">algopasaconmery13@gmail.com</div>
+              <div className="text-sm opacity-80">algopasaconmery13 @gmail.com</div>
             </div>
           </div>
         </div>
